@@ -10,6 +10,7 @@ Main page styles
     background-size: contain;
 }
 
+
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -23,4 +24,5 @@ only screen and (                min-resolution: 2dppx) {
         background-size: contain;
     }
 }
+
 

@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "team",
+            "otherEntityName": "team",
+            "relationshipType": "many-to-many",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "player"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "playername",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "playerNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "playerPhoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "playerAddress",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180611064538",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "player",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

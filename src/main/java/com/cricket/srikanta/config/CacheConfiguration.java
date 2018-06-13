@@ -38,6 +38,10 @@ public class CacheConfiguration {
             cm.createCache(com.cricket.srikanta.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.cricket.srikanta.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.cricket.srikanta.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.cricket.srikanta.domain.Team.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cricket.srikanta.domain.Team.class.getName() + ".players", jcacheConfiguration);
+            cm.createCache(com.cricket.srikanta.domain.Player.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cricket.srikanta.domain.Player.class.getName() + ".teams", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
