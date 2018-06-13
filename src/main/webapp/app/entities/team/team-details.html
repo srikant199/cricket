@@ -15,21 +15,22 @@
   <img src='../../../content/images/ss.jpg' style="width:1500px"height="200px"/>
   <button routerLink="TeamForm"style="background-color: #17a2b8" (click)="teamtuggle()" >TeamForm</button>
   <button routerLink="PlayerForm"style="background-color: #0c5460" (click)="playertuggle()" >PlayerForm</button>
-<button routerLink="NextPage"style="background-color:darkcyan" (click)="NextPage()" >NEXTPAGE</button>
+   <button routerLink="NextPage"style="background-color:darkcyan" (click)="NextPage()" >NEXTPAGE</button>
+
 <form name="teamDetails" ngForm="teamDetails" (ngSubmit)="teamSave()" [hidden]="teamShow">
     <table>
-        <tr><td>TeamName:</td><td><input type="text"  name="teamName"></td></tr>
-        <tr><td>TeamRules:</td><td><input type="text"  name="teamRule"></td></tr>
-        <tr><td>TeanDetails:</td><td><input type="text"  name="teamDetails"></td></tr>
+        <tr><td>TeamName:</td><td><input type="text"  name="teamName" [(ngModel)]="team.teamName"></td></tr>
+        <tr><td>TeamRules:</td><td><input type="text"  name="teamRule" [(ngModel)]="team.teamRules"></td></tr>
+        <tr><td>TeanDetails:</td><td><input type="text"  name="teamDetails" [(ngModel)]="team.teamDetails"></td></tr>
         <button routerLink="PlayerForm"style="background-color: #0c5460" type="submit">SUBMIT</button>
     </table>
 </form>
 <form name="playerDetails" ngForm="playerDetails" (ngSubmit)="PlayersDetails()"  [hidden]="playerShow">
     <table>
-        <tr><td>PlayerName:</td><td><input type="text"  name="playerName"></td></tr>
-        <tr><td>PlayerNumber:</td><td><input type="text"  name="playerNumber"></td></tr>
-        <tr><td>PlayerPhoneNumber:</td><td><input type="text"  name="playerPhonenumber"></td></tr>
-        <tr><td>PlayerAddress:</td><td><input type="text"  name="playerAddress"></td></tr>
+        <tr><td>PlayerName:</td><td><input type="text"  name="playerName" [(ngModel)]="player.playername"></td></tr>
+        <tr><td>PlayerNumber:</td><td><input type="text"  name="playerNumber" [(ngModel)]="player.playerNumber"></td></tr>
+        <tr><td>PlayerPhoneNumber:</td><td><input type="text"  name="playerPhonenumber" [(ngModel)]="player.playerPhoneNumber"></td></tr>
+        <tr><td>PlayerAddress:</td><td><input type="text"  name="playerAddress" [(ngModel)]="player.playerAddress"></td></tr>
         <button routerLink="PlayerForm"style="background-color: #0c5460" type="submit">SUBMIT</button>
     </table>
 </form>

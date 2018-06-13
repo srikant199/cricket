@@ -14,7 +14,7 @@ import {
     teamRoute,
     teamPopupRoute,
 } from './';
-import {TeamDetailsComponent} from "./TeamDetails.component";
+import {TeamDetailsComponent} from './team-details.component';
 
 const ENTITY_STATES = [
     ...teamRoute,

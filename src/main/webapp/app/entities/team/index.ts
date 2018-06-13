@@ -6,5 +6,4 @@ export * from './team-delete-dialog.component';
 export * from './team-detail.component';
 export * from './team.component';
 export * from './team.route';
-export * from './TeamDetails.component';
-
+export * from './team-details.component';

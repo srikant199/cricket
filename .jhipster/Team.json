@@ -6,7 +6,7 @@
             "otherEntityName": "player",
             "relationshipType": "many-to-many",
             "ownerSide": false,
-            "otherEntityRelationshipName": "n"
+            "otherEntityRelationshipName": "team"
         }
     ],
     "fields": [

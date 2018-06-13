@@ -5,6 +5,7 @@ import { TeamComponent } from './team.component';
 import { TeamDetailComponent } from './team-detail.component';
 import { TeamPopupComponent } from './team-dialog.component';
 import { TeamDeletePopupComponent } from './team-delete-dialog.component';
+import {TeamDetailsComponent} from './team-details.component';
 
 export const teamRoute: Routes = [
     {
@@ -22,10 +23,9 @@ export const teamRoute: Routes = [
             authorities: ['ROLE_USER'],
             pageTitle: 'cricketApp.team.home.title'
         }, canActivate: [UserRouteAccessService]
-    },
-    {
-        path: 'TeamDetails',
-        component: TeamDetailComponent,
+    }, {
+        path: 'new-team',
+        component: TeamDetailsComponent,
         data: {
             authorities: ['ROLE_USER'],
             pageTitle: 'cricketApp.team.home.title'

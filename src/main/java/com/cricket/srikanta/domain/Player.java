@@ -39,11 +39,9 @@ public class Player implements Serializable {
     @Column(name = "player_address")
     private String playerAddress;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JsonIgnore
-    @JoinTable(name = "player_team", joinColumns = { @JoinColumn(name = "player_ID") }, inverseJoinColumns = { @JoinColumn(name = "team_ID") })
-        @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-
+    @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Team> teams = new HashSet<>();
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove

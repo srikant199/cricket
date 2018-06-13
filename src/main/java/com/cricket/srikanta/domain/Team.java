@@ -36,8 +36,9 @@ public class Team implements Serializable {
     @Column(name = "team_details")
     private String teamDetails;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JsonIgnore
+//    @JoinTable(name = "team_player", joinColumns = { @JoinColumn(name = "team_id") }, inverseJoinColumns = { @JoinColumn(name = "player_id") })
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Player> players = new HashSet<>();
 
